@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.root-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 32px;
+  gap: 24px;
+
+  background-color: #5adcdc;
+
+  min-height: 100%;
+}
+
+.table-container {
+  display: block;
+  overflow: auto;
+  flex-shrink: 0;
+
+  background-color: #fff;
+
+  padding: 5px;
+  min-height: 100px;
+  max-width: 100%;
+}
+
+.table {
+  border-collapse: collapse;
+  background-color: white;
+  border: none;
+}
+
+.head-row {
+  border: 2px solid black;
+}
+
+.column {
+  padding: 5px;
+}
+
+.column button {
+  cursor: pointer;
+  display: inline-block;
+  
+  border: none;
+  border-radius: 15px;
+
+  background-color: #51e6ad;
+  color: white;
+  font-weight: 600;
+
+  margin: 3px;
+  padding: 10px;
+}
+
+.column button:hover {
+  background-color: #39a37b;
+}
+
+#modal {
+  display: flex;
+  position: absolute;
+
+  background-color: white;
+
+  border: 2px solid black;
+  border-radius: 15px;
+
+  padding: 15px;
+  min-height: 300px;
+  min-width: 300px;
+}
+
+.pd-r-5 {
+  padding-right: 5px;
+}
+
+.modal-body {
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: none;
+  position: fixed;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(100, 100, 100, 0.7);
+
+  height: 100%;
+  width: 100%;
+}
+
+.visible-modal {
+  display: flex;
+}
+
+.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+#addUserForm {
+  display: flex;
+  flex-direction: column;
+
+  background-color: white;
+
+  width: 250px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+#addUserForm input {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#addUserForm input[type='submit'] {
+  border: none;
+  cursor: pointer;
+  
+  background-color: #51e6ad;
+  color: white;
+  
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+#addUserForm input[type='submit']:hover {
+  background-color: #39a37b;
+}
+
+#addUserForm label {
+  margin-top: 7px;
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+
+.field-container {
+  display: flex;
+  flex-direction: column;
+
+  padding: 5px;
+  margin: 5px;
+}

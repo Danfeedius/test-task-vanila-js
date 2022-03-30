@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test App</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <div class="root-container">
+        <div class="table-container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="column sortable">
+                            Name
+                        </th>
+                        <th class="column sortable">
+                            Username
+                        </th>
+                        <th class="column sortable">
+                            Email
+                        </th>
+                        <th class="column sortable">
+                            Website
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="table-data"></tbody>
+            </table>
+        </div>
+
+        <form id="addUserForm">
+            <fieldset class="field-container">
+                <legend>Add new User</legend>
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" />
+
+                <label for="username">Username</label>
+                <input type="text" id="username" />
+
+                <label for="email"> Email</label>
+                <input type="email" id="email" required />
+
+                <label for="website">Website</label>
+                <input type="text" id="website" />
+
+                <input type="submit" />
+            </fieldset>
+        </form>
+
+    </div>
+
+    <div class="modal-body">
+        <table class="table" id="modal">
+            <tbody id="modal-data"></tbody>
+        </table>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
